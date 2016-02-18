@@ -1,0 +1,14 @@
+<h1>Todo List</h1>
+
+<ul id="todos">
+  <% @tasks.each do |task| %>
+    <%= erb :_task, locals: {task: task} %>
+  <% end %>
+</ul>
+
+<a id="new_task" href="/">Add new Task</a>
+
+<form id="add_task">
+  <input action="/" type="text" name='task_name' method="post" placeholder=" New Task">
+  <input type='submit'>
+</form>

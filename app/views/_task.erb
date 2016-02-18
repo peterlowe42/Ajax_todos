@@ -1,0 +1,6 @@
+<li id='<%=task.id%>'><p><%= task.name %></p>
+<form action="/<%= task.id%>" method='post'>
+  <input type="hidden" name="_method" value="delete">
+<button type="submit">Delete</button>
+</form>
+</li>
